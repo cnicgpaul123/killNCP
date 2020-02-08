@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+# 工程预装模块
+# 需要额外的python包，可直接在文件后面添加
+# 请确保指定的包和版本号，可通过pip安装
+
+# Django==2.2.*
+django-cors-headers==2.5.2
+django-filter==2.1.0
+djangorestframework==3.9.2
+# kombu==4.1.0
+# pycrypto==2.6.1
+# pymongo==3.6.1
+PyMySQL==0.9.3
+pytz==2018.9
+PyYAML==5.1
+raven==6.10.0
+requests==2.21.0
+six==1.12.0
+tzlocal==1.5.1
+
+# celery==4.1.0
+# django-celery-beat==1.0.1
+# SQLAlchemy==1.2.7
+# git+https://github.com/princeofdatamining/django_celery_management.git
+
+# tablib==0.12.1
+# xlrd==1.2.0
+# xlutils==2.0.0
+# xlwt==1.3.0

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<input_data>
+  <service_code>040100</service_code>
+  <block_number>03</block_number>
+  <block>
+    <algorithm>
+      <type>000000</type>
+      <info>0000</info>
+    </algorithm>
+    <data>5130001000000017031280</data>
+  </block>
+  <block>
+    <algorithm>
+      <type>680000</type>
+      <info>0000</info>
+    </algorithm>
+    <data>7E216AAC0300</data>
+  </block>
+  <block>
+    <algorithm>
+      <type>680000</type>
+      <info>0000</info>
+    </algorithm>
+    <data>qaz@wsx</data>
+  </block>
+</input_data>

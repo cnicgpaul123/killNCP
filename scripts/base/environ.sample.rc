@@ -1,0 +1,55 @@
+
+# 产品/项目名称
+
+# 小组代号
+GROUP_CODENAME=test
+# 项目代号
+PROJ_CODENAME=sample
+
+# 如果需要 pyenv 则需要设置：python 版本、虚拟环境名、pyenv 虚拟环境目录；
+# 否则可跳过
+PROJ_PYTHON_VER=3.6.6
+PROJ_PYTHON_ENV=${GROUP_CODENAME}_${PROJ_CODENAME}
+PROJ_PYTHON_BIN="/cnicg/app/pyenv/versions/${PROJ_PYTHON_ENV}/bin"
+
+# 如果不使用 pyenv，则需要设置对应的 python、pip 路径；
+# 否则可跳过
+PROJ_PYTHON="${PROJ_PYTHON_BIN}/python3"
+PROJ_PIP="${PROJ_PYTHON_BIN}/pip3"
+
+# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
+SECRET_KEY="00000111112222233333444445555566666777778888899999"
+
+# 静态资源 URL 及目录
+STATIC_URL=/dj/static/
+STATIC_ROOT="/cnicg/projs/${GROUP_CODENAME}/${PROJ_CODENAME}/web"
+
+# 动态资源 URL 及目录
+# MEDIA_URL=/media/
+# MEDIA_ROOT="/cnicg/projs/${GROUP_CODENAME}/${PROJ_CODENAME}/media"
+
+# 日志
+PROJ_LOG_DIR="/cnicg/logs/${GROUP_CODENAME}/${PROJ_CODENAME}"
+PROG_LOG_FILE="${PROJ_LOG_DIR}/root.log"
+
+# raven(sentry)
+RAVEN_DSN=""
+
+# 容器运行端口
+PROJ_WEB_PORT=8000
+# 前端代码目录
+PUB_WWW_ROOT="${PROJ_GIT_DIR}/www/default/dist"
+# 域名
+PROJ_DOMAIN="${PROJ_CODENAME}.${GROUP_CODENAME}.work.com"
+
+# 前端通过 node/nuxt 启动服务
+# NUXT_WEB_PORT=8001
+# NUXT_WEB_PATH="${PROJ_GIT_DIR}/www/nuxt"
+# NUXT_NODE_BIN="/cnicg/app/nvm/versions/node/v10.15.3/bin/node"
+
+# 数据库连接配置
+DB_URI="" # "mysql://127.0.0.1/db_${GROUP_CODENAME}_${PROJ_CODENAME}?charset=utf8"
+
+# celery
+# CELERY_BROKER_URL="amqp://127.0.0.1/%2f${GROUP_CODENAME}_${PROJ_CODENAME}"
+# CELERY_LOG_FILE="${PROJ_LOG_DIR}/celery.log"
