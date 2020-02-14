@@ -39,7 +39,7 @@ class UserViewSet(admin_router.perform_mixin, viewsets.ModelViewSet):
     extra_permission_classes = {
         #
         # 角色限定：超级管理员
-        'create': [permissions.IsSuperUser],
+        'create': [],
         #
         # 角色限定：超级管理员
         'token': [permissions.IsSuperUser],
