@@ -1,0 +1,6 @@
+.*
+*.pyc
+*.sqlite*
+*.egg-info/
+__pycache__/
+/environ/

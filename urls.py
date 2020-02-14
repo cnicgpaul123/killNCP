@@ -14,21 +14,25 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
+from rest_framework.routers import DefaultRouter
+
+
+from personinfo_app import views
+router = DefaultRouter()
+router.register(r'api/personinfo', views.PersonInfoViewSet, base_name="personinfos")
+
 
 urlpatterns = [
     path('', include('django.contrib.staticfiles.urls')),
-    # *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 
     path('views/auth/', include('rest_framework.urls')),
-    path('views/', include('libtest.urls')),
     path('api/admin/', include('drf_auth.admin.urls')),
     path('api/', include('drf_auth.api.urls')),
-    # path('views/qrcode/', include('general_qrcode.urls')),
-    #
-    # path('api/', include('libtest.exceptions.urls')),
-    # path('api/', include('libtest.biz.urls')),
-    #
-    # path('api/admin/', include('libtest.admin.urls')),
+    # path('api/admin/', include('drf_auth.admin.urls')),
+    # path('api/', include('drf_auth.api.urls')),
+
+    path('api/exportexcel/', views.ExportExcelView.as_view(), name='export_person'),
+    path('api/personinfoiscreate/', views.PersonInfoIsCreateView.as_view(), name='personinfo_is_create'),
+    path('api/visitinfo/', views.VisitInfoCreateView.as_view(), name='visitinfo'),
+
 ]

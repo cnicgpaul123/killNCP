@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'applus',
     'drf_auth',
+    'personinfo_app'
     # 'libs.pysm4'
 ]
 
