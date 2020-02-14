@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-""" 扩展 rest_framework Router 功能
-"""
+""" 扩展 rest_framework Router 功能 """
 from inspect import getmembers
 import functools
+from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.utils import functional
 from rest_framework import routers
@@ -37,6 +37,14 @@ class Router(routers.DefaultRouter):
         """ register 辅助装饰器 """
         def decorator(viewset):
             self._register(prefix, viewset, *args, **kwargs)
+            return viewset
+        return decorator
+
+    def register_debug(self, prefix, *args, **kwargs):
+        """ 仅 DEBUG=True 时有效 """
+        def decorator(viewset):
+            if settings.DEBUG:
+                self._register(prefix, viewset, *args, **kwargs)
             return viewset
         return decorator
 
@@ -161,27 +169,44 @@ class VerbRouter(FilterRouter):
         """ 装饰器 """
         def decorator(func):
             func.verb_method = (method or "get").lower()
-            func.url_path = url_path if url_path else func.__name__
-            if not url_name:
-                func.url_name = func.__name__.replace('_', '-')
+            if isinstance(url_path, str):
+                func.url_path = url_path
             else:
+                func.url_path = func.__name__
+            if isinstance(url_name, str):
                 func.url_name = url_name
+            else:
+                func.url_name = func.__name__.replace('_', '-')
             func.kwargs = kwargs
             return func
         return decorator
 
     # pylint: disable=no-self-use
-    def _get_verb_route(self, action):
-        initkwargs = action.kwargs.copy()
+    def _get_verb_route(self, action, routes):
         url_path = routers.escape_curly_brackets(action.url_path)
         url = r'^{prefix}/{url_path}{trailing_slash}$'
+        if not url_path:
+            url = url.replace('/{url_path}', '')
+        else:
+            url = url.replace('{url_path}', url_path)
+        # 多个 verb 对应相同 url 时，合并 mapping
+        for route in routes:
+            if route.url == url:
+                route.mapping[action.verb_method] = action.__name__
+                return
+        #
         name = '{basename}-{url_name}'
-        return routers.Route(
-            url=url.replace('{url_path}', url_path),
+        if not action.url_name:
+            name = name.replace('-{url_name}', '')
+        else:
+            name = name.replace('{url_name}', action.url_name)
+        initkwargs = action.kwargs.copy()
+        routes.append(routers.Route(
+            url=url,
             mapping={action.verb_method: action.__name__},
-            name=name.replace('{url_name}', action.url_name),
+            name=name,
             detail=None,
-            initkwargs=initkwargs)
+            initkwargs=initkwargs))
 
     def get_routes(self, viewset):
         """ append verb routers. """
@@ -198,10 +223,9 @@ class VerbRouter(FilterRouter):
                    'methods, as they are existing routes: %s')
             raise ImproperlyConfigured(msg % ', '.join(not_allowed))
         #
-        verb_routes = [
-            self._get_verb_route(action)
-            for action in verb_actions
-        ]
+        verb_routes = []
+        for action in verb_actions:
+            self._get_verb_route(action, verb_routes)
         # 必须把扩展 Route 放置在默认之前(否则，detail/lookup Pattern 会优先使用)
         return verb_routes + defaults
 

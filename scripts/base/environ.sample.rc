@@ -53,3 +53,5 @@ DB_URI="" # "mysql://127.0.0.1/db_${GROUP_CODENAME}_${PROJ_CODENAME}?charset=utf
 # celery
 # CELERY_BROKER_URL="amqp://127.0.0.1/%2f${GROUP_CODENAME}_${PROJ_CODENAME}"
 # CELERY_LOG_FILE="${PROJ_LOG_DIR}/celery.log"
+
+DEBUG_MODE=True;SED=gsed

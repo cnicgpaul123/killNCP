@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-""" 令牌管理
-"""
+""" 令牌管理 """
 from django.db import models
 
 

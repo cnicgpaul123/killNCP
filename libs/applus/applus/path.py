@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-""" Utils for path and URL
-"""
+""" Utils for path and URL """
 import urllib
 
 
