@@ -28,7 +28,7 @@ class UserViewSet(admin_router.perform_mixin, viewsets.ModelViewSet):
         - 修改密码(超级管理员可以修改所有、普通管理员仅可修改自身)
     """
 
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = []
     # queryset = serializers.user_dao
     lookup_field = 'username'
     lookup_value_regex = '[^/]+' # 允许 email 形式 “master@qq.com”
