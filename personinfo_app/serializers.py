@@ -19,6 +19,7 @@ class PersonInfoSerializer(serializers.ModelSerializer):
     contactphone = serializers.CharField(write_only=True, help_text="联系人电话")
     reason = serializers.CharField(write_only=True, help_text="到访事由")
     temperature = serializers.CharField(write_only=True, help_text="记录体温")
+    carid = serializers.CharField(allow_blank=True, allow_null=True, help_text="车牌号")    
 
     def validate(self, attrs):
         del attrs["contactname"]

@@ -2111,3 +2111,1527 @@ Unauthorized: /api/personinfo/
 [pid: 16081|app: 0|req: 18/29] 159.226.29.55 () {46 vars in 907 bytes} [Sat Feb 15 21:45:28 2020] GET /api/personinfo/?userid=1 => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
 Unauthorized: /api/admin/users/
 [pid: 16081|app: 0|req: 19/30] 159.226.29.55 () {52 vars in 1049 bytes} [Sat Feb 15 21:45:51 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 20/31] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 21:56:54 2020] POST /api/admin/users/ => generated 86 bytes in 3 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 21/32] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 21:58:01 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16080|app: 0|req: 5/33] 159.226.29.55 () {52 vars in 1047 bytes} [Sat Feb 15 21:58:39 2020] POST /api/auth/login/ => generated 86 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 6/34] 159.226.29.55 () {44 vars in 653 bytes} [Sat Feb 15 21:59:12 2020] POST /api/personinfoiscreate/ => generated 10 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 144 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 22/35] 159.226.29.55 () {52 vars in 1049 bytes} [Sat Feb 15 21:59:52 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16081|app: 0|req: 23/36] 159.226.29.55 () {50 vars in 1029 bytes} [Sat Feb 15 22:00:10 2020] POST /api/auth/login/ => generated 86 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+Internal Server Error: /api/admin/users/
+Traceback (most recent call last):
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 733, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 710, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 642, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 103, in to_html
+    template = loader.get_template(self.template)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+[pid: 16080|app: 0|req: 7/37] 159.226.29.55 () {44 vars in 866 bytes} [Sat Feb 15 22:00:12 2020] GET /api/admin/users/ => generated 99164 bytes in 97 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 24/38] 159.226.29.55 () {44 vars in 854 bytes} [Sat Feb 15 22:00:39 2020] GET /api/admin/ => generated 10040 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 328 bytes (1 switches on core 0)
+Internal Server Error: /api/admin/users/
+Traceback (most recent call last):
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 733, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 710, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 642, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 103, in to_html
+    template = loader.get_template(self.template)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+[pid: 16078|app: 0|req: 6/39] 159.226.29.55 () {46 vars in 926 bytes} [Sat Feb 15 22:00:46 2020] GET /api/admin/users/ => generated 99328 bytes in 100 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /api/admin/users/
+Traceback (most recent call last):
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 733, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 710, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 642, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 103, in to_html
+    template = loader.get_template(self.template)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+[pid: 16081|app: 0|req: 25/40] 159.226.29.55 () {48 vars in 957 bytes} [Sat Feb 15 22:21:53 2020] GET /api/admin/users/ => generated 99463 bytes in 59 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+[pid: 16078|app: 0|req: 7/41] 159.226.29.55 () {52 vars in 1047 bytes} [Sat Feb 15 22:32:56 2020] POST /api/auth/login/ => generated 120 bytes in 236 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 26/42] 159.226.29.55 () {46 vars in 951 bytes} [Sat Feb 15 22:32:57 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 16079|app: 0|req: 3/43] 159.226.29.55 () {52 vars in 1093 bytes} [Sat Feb 15 22:33:30 2020] POST /api/admin/users/ => generated 102 bytes in 13 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 16078|app: 0|req: 8/44] 159.226.29.55 () {52 vars in 1093 bytes} [Sat Feb 15 22:33:35 2020] POST /api/admin/users/ => generated 21 bytes in 119 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 27/45] 159.226.29.55 () {52 vars in 1093 bytes} [Sat Feb 15 22:33:56 2020] POST /api/admin/users/ => generated 17 bytes in 117 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16079|app: 0|req: 4/46] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:30 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 28/47] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:42 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 29/48] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:46 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16080|app: 0|req: 8/49] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:47 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16078|app: 0|req: 9/50] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:48 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16078|app: 0|req: 10/51] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:48 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 30/52] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:48 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 31/53] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:48 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 32/54] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:48 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16078|app: 0|req: 11/55] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:48 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 33/56] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:49 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 34/57] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:34:53 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 5/58] 159.226.29.55 () {52 vars in 1093 bytes} [Sat Feb 15 22:35:14 2020] POST /api/admin/users/ => generated 17 bytes in 118 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 35/59] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:35:18 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 36/60] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:35:19 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 37/61] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:35:20 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 38/62] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:35:20 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 39/63] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:35:21 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 40/64] 159.226.29.55 () {50 vars in 1012 bytes} [Sat Feb 15 22:35:21 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 41/65] 159.226.29.55 () {50 vars in 1010 bytes} [Sat Feb 15 22:36:38 2020] POST /api/auth/login/ => generated 120 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 42/66] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:36:39 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 9/67] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 22:37:09 2020] GET /api/personinfo/?search=&userid=1 => generated 1886 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16078|app: 0|req: 12/68] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:37:12 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 43/69] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 22:37:34 2020] GET /api/personinfo/?search=&userid=1 => generated 1886 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 6/70] 159.226.29.55 () {50 vars in 1056 bytes} [Sat Feb 15 22:38:05 2020] POST /api/admin/users/ => generated 27 bytes in 118 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 10/71] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 22:38:25 2020] POST /api/auth/login/ => generated 118 bytes in 239 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 11/72] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:38:26 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 44/73] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 22:38:51 2020] GET /api/personinfo/?search=&userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 45/74] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:38:53 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 12/75] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 22:39:15 2020] POST /api/auth/login/ => generated 120 bytes in 234 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 13/76] 159.226.29.55 () {46 vars in 951 bytes} [Sat Feb 15 22:39:15 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 46/77] 159.226.29.55 () {46 vars in 951 bytes} [Sat Feb 15 22:39:39 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 47/78] 159.226.29.55 () {46 vars in 967 bytes} [Sat Feb 15 22:39:41 2020] GET /api/personinfo/?search=&userid=1 => generated 1886 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 7/79] 159.226.29.55 () {46 vars in 955 bytes} [Sat Feb 15 22:39:42 2020] GET /api/personinfo/4/?userid=1 => generated 582 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 48/80] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:39:50 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 49/81] 159.226.29.55 () {46 vars in 951 bytes} [Sat Feb 15 22:40:12 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 8/82] 159.226.29.55 () {46 vars in 967 bytes} [Sat Feb 15 22:40:55 2020] GET /api/personinfo/?search=&userid=1 => generated 1886 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16081|app: 0|req: 50/83] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 22:45:59 2020] POST /api/auth/login/ => generated 86 bytes in 117 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 16078|app: 0|req: 13/84] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 22:52:46 2020] POST /api/auth/login/ => generated 120 bytes in 257 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 51/85] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 22:52:46 2020] POST /api/auth/login/ => generated 120 bytes in 258 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 9/86] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 22:52:46 2020] POST /api/auth/login/ => generated 120 bytes in 258 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 52/87] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:52:46 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 10/88] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:52:53 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 53/89] 159.226.29.55 () {44 vars in 918 bytes} [Sat Feb 15 22:52:57 2020] GET /api/personinfo/1/?userid=1 => generated 433 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 11/90] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:53:13 2020] GET /api/personinfo/?userid=1 => generated 1886 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 14/91] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 22:53:14 2020] GET /api/personinfo/?search=&userid=1 => generated 1886 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 54/92] 159.226.29.55 () {44 vars in 948 bytes} [Sat Feb 15 22:53:24 2020] GET /api/personinfo/?search=%E5%9B%9B&userid=1 => generated 435 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 55/93] 159.226.29.55 () {44 vars in 919 bytes} [Sat Feb 15 22:53:29 2020] GET /api/exportexcel/?userid=1 => generated 5632 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 220 bytes (2 switches on core 0)
+[pid: 16079|app: 0|req: 12/94] 159.226.29.55 () {50 vars in 1056 bytes} [Sat Feb 15 22:55:06 2020] POST /api/personinfo/ => generated 433 bytes in 27 msecs (HTTP/1.1 201) 5 headers in 161 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 56/95] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:58:39 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 57/96] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:58:40 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 15/97] 159.226.29.55 () {44 vars in 920 bytes} [Sat Feb 15 22:58:43 2020] GET /api/personinfo/17/?userid=1 => generated 433 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 16/98] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 22:58:46 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 17/99] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:07:16 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 58/100] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:07:31 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 59/101] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 23:08:24 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 60/102] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 23:10:46 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16081|app: 0|req: 61/103] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:11:04 2020] POST /api/auth/login/ => generated 86 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16081|app: 0|req: 62/104] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:11:11 2020] POST /api/auth/login/ => generated 86 bytes in 8 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 63/105] 159.226.29.55 () {50 vars in 1056 bytes} [Sat Feb 15 23:11:32 2020] POST /api/admin/users/ => generated 21 bytes in 117 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 64/106] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:11:44 2020] POST /api/auth/login/ => generated 112 bytes in 238 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 65/107] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:11:44 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 66/108] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 23:11:50 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 67/109] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:11:50 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 68/110] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 23:11:56 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 69/111] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 23:12:17 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 70/112] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:12:25 2020] POST /api/auth/login/ => generated 118 bytes in 235 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 71/113] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:12:25 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 72/114] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:12:39 2020] POST /api/auth/login/ => generated 112 bytes in 234 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 73/115] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:12:40 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16078|app: 0|req: 14/116] 159.226.29.55 () {50 vars in 1031 bytes} [Sat Feb 15 23:12:47 2020] POST /api/admin/users/ => generated 86 bytes in 2 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 74/117] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 23:13:01 2020] GET /api/personinfo/?search=&userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 18/118] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:13:01 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16078|app: 0|req: 15/119] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 23:13:04 2020] GET /api/personinfo/?search=&userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 13/120] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:13:32 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 19/121] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 23:13:37 2020] GET /api/personinfo/?search=&userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 20/122] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:13:39 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 75/123] 159.226.29.55 () {50 vars in 1029 bytes} [Sat Feb 15 23:14:17 2020] POST /api/auth/login/ => generated 120 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 21/124] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:14:18 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 16081|app: 0|req: 76/125] 159.226.29.55 () {50 vars in 1075 bytes} [Sat Feb 15 23:14:44 2020] POST /api/admin/users/ => generated 107 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 77/126] 159.226.29.55 () {46 vars in 965 bytes} [Sat Feb 15 23:15:49 2020] GET /api/personinfo/?search=&userid=1 => generated 2320 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 78/127] 159.226.29.55 () {50 vars in 1073 bytes} [Sat Feb 15 23:16:08 2020] POST /api/auth/login/ => generated 120 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 14/128] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:16:09 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 22/129] 159.226.29.55 () {52 vars in 1089 bytes} [Sat Feb 15 23:16:22 2020] POST /api/auth/login/ => generated 120 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 23/130] 159.226.29.55 () {46 vars in 949 bytes} [Sat Feb 15 23:16:22 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 79/131] 159.226.29.55 () {50 vars in 1073 bytes} [Sat Feb 15 23:16:46 2020] POST /api/auth/login/ => generated 112 bytes in 240 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 15/132] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:16:46 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16081|app: 0|req: 80/133] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:16:50 2020] POST /api/auth/login/ => generated 86 bytes in 117 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 16078|app: 0|req: 16/134] 159.226.29.55 () {44 vars in 949 bytes} [Sat Feb 15 23:16:53 2020] GET /api/personinfo/?search=&userid=6 => generated 2 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 16/135] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 23:16:53 2020] POST /api/admin/users/ => generated 17 bytes in 118 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 81/136] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:16:53 2020] GET /api/personinfo/?userid=6 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16079|app: 0|req: 17/137] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:16:58 2020] POST /api/auth/login/ => generated 86 bytes in 117 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 16081|app: 0|req: 82/138] 159.226.29.55 () {50 vars in 1075 bytes} [Sat Feb 15 23:17:09 2020] POST /api/admin/users/ => generated 107 bytes in 7 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/auth/login/
+[pid: 16081|app: 0|req: 83/139] 159.226.29.55 () {52 vars in 1089 bytes} [Sat Feb 15 23:17:10 2020] POST /api/auth/login/ => generated 86 bytes in 8 msecs (HTTP/1.1 400) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 84/140] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 23:17:26 2020] POST /api/admin/users/ => generated 19 bytes in 116 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 85/141] 159.226.29.55 () {50 vars in 1075 bytes} [Sat Feb 15 23:17:29 2020] POST /api/admin/users/ => generated 18 bytes in 117 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 86/142] 159.226.29.55 () {52 vars in 1089 bytes} [Sat Feb 15 23:17:35 2020] POST /api/auth/login/ => generated 110 bytes in 238 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 24/143] 159.226.29.55 () {46 vars in 949 bytes} [Sat Feb 15 23:17:35 2020] GET /api/personinfo/?userid=8 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 25/144] 159.226.29.55 () {50 vars in 1073 bytes} [Sat Feb 15 23:18:14 2020] POST /api/auth/login/ => generated 109 bytes in 237 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 87/145] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:18:18 2020] GET /api/personinfo/?userid=9 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 88/146] 159.226.29.55 () {50 vars in 1073 bytes} [Sat Feb 15 23:18:49 2020] POST /api/auth/login/ => generated 120 bytes in 236 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 26/147] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:18:50 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 89/148] 159.226.29.55 () {44 vars in 939 bytes} [Sat Feb 15 23:19:25 2020] GET /api/personinfo/17/?userid=1 => generated 433 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 90/149] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:19:58 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 91/150] 159.226.29.55 () {44 vars in 937 bytes} [Sat Feb 15 23:20:01 2020] GET /api/personinfo/4/?userid=1 => generated 582 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 92/151] 159.226.29.55 () {50 vars in 1054 bytes} [Sat Feb 15 23:20:25 2020] POST /api/auth/login/ => generated 120 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 93/152] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:20:25 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 94/153] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:20:29 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 95/154] 159.226.29.55 () {44 vars in 918 bytes} [Sat Feb 15 23:20:31 2020] GET /api/personinfo/1/?userid=1 => generated 433 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 27/155] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:20:39 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 96/156] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:20:49 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 35 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 97/157] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:20:54 2020] GET /api/personinfo/?userid=1 => generated 2320 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 28/158] 159.226.29.55 () {50 vars in 1075 bytes} [Sat Feb 15 23:22:09 2020] POST /api/personinfo/ => generated 422 bytes in 22 msecs (HTTP/1.1 201) 5 headers in 161 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 98/159] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 23:22:12 2020] POST /api/admin/users/ => generated 19 bytes in 117 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 99/160] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:23:03 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 100/161] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 23:23:28 2020] GET /api/personinfo/?search=&userid=1 => generated 2743 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 101/162] 159.226.29.55 () {44 vars in 918 bytes} [Sat Feb 15 23:23:30 2020] GET /api/personinfo/2/?userid=1 => generated 432 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 102/163] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:23:32 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 103/164] 159.226.29.55 () {44 vars in 914 bytes} [Sat Feb 15 23:23:36 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 104/165] 159.226.29.55 () {44 vars in 930 bytes} [Sat Feb 15 23:23:37 2020] GET /api/personinfo/?search=&userid=1 => generated 2743 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 105/166] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:23:41 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16080|app: 0|req: 29/167] 159.226.29.55 () {44 vars in 937 bytes} [Sat Feb 15 23:23:45 2020] GET /api/personinfo/4/?userid=1 => generated 582 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 106/168] 159.226.29.55 () {48 vars in 874 bytes} [Sat Feb 15 23:25:33 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 107/169] 159.226.29.55 () {48 vars in 874 bytes} [Sat Feb 15 23:25:38 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Unauthorized: /api/admin/users/
+[pid: 16081|app: 0|req: 108/170] 159.226.29.55 () {48 vars in 874 bytes} [Sat Feb 15 23:25:42 2020] POST /api/admin/users/ => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 190 bytes (1 switches on core 0)
+Internal Server Error: /api/admin/users/
+Traceback (most recent call last):
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 733, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 710, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/rest_framework/renderers.py", line 642, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 103, in to_html
+    template = loader.get_template(self.template)
+  File "/home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+[pid: 16078|app: 0|req: 17/171] 159.226.29.55 () {42 vars in 777 bytes} [Sat Feb 15 23:26:08 2020] GET /api/admin/users/ => generated 98847 bytes in 56 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 16080|app: 0|req: 30/172] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 23:27:20 2020] POST /api/admin/users/ => generated 107 bytes in 8 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 16081|app: 0|req: 109/173] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 23:27:30 2020] POST /api/admin/users/ => generated 107 bytes in 7 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 16081|app: 0|req: 110/174] 159.226.29.55 () {52 vars in 1091 bytes} [Sat Feb 15 23:28:06 2020] POST /api/admin/users/ => generated 107 bytes in 8 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 16079|app: 0|req: 18/175] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:43:40 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 111/176] 159.226.29.55 () {50 vars in 1073 bytes} [Sat Feb 15 23:43:43 2020] POST /api/auth/login/ => generated 109 bytes in 237 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 16081|app: 0|req: 112/177] 159.226.29.55 () {44 vars in 933 bytes} [Sat Feb 15 23:43:44 2020] GET /api/personinfo/?userid=9 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8082)
+running /usr/local/python3/bin/uwsgi
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:13:22 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8082 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Feb 13 2020, 13:26:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+Set PythonHome to /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x10c5e40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x10c5e40 pid: 16076 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 16076)
+spawned uWSGI worker 1 (pid: 18860, cores: 1)
+spawned uWSGI worker 2 (pid: 18861, cores: 1)
+spawned uWSGI worker 3 (pid: 18862, cores: 1)
+spawned uWSGI worker 4 (pid: 18863, cores: 1)
+Sun Feb 16 00:13:31 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Feb 16 00:13:31 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Feb 16 00:13:31 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:13:37 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:13:38 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:13:40 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:13:43 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:13:59 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8082 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Feb 13 2020, 13:26:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+Set PythonHome to /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xac1390
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xac1390 pid: 18880 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18880)
+spawned uWSGI worker 1 (pid: 18882, cores: 1)
+spawned uWSGI worker 2 (pid: 18883, cores: 1)
+spawned uWSGI worker 3 (pid: 18884, cores: 1)
+spawned uWSGI worker 4 (pid: 18885, cores: 1)
+[pid: 18883|app: 0|req: 1/1] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 00:14:26 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 242 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 1/2] 159.226.29.55 () {46 vars in 950 bytes} [Sun Feb 16 00:14:36 2020] DELETE /api/auth/logout/ => generated 2 bytes in 225 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 2/3] 159.226.29.55 () {50 vars in 1010 bytes} [Sun Feb 16 00:14:39 2020] POST /api/auth/login/ => generated 118 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 3/4] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 00:14:39 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 4/5] 159.226.29.55 () {44 vars in 930 bytes} [Sun Feb 16 00:14:42 2020] GET /api/personinfo/?search=&userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 5/6] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 00:14:43 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 6/7] 159.226.29.55 () {46 vars in 950 bytes} [Sun Feb 16 00:14:45 2020] DELETE /api/auth/logout/ => generated 2 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 7/8] 159.226.29.55 () {46 vars in 970 bytes} [Sun Feb 16 00:15:10 2020] DELETE /api/auth/logout/ => generated 2 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 8/9] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:10 2020] POST /api/admin/users/ => generated 233 bytes in 5 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18883|app: 0|req: 2/10] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:10 2020] POST /api/admin/users/ => generated 233 bytes in 6 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+Bad Request: /api/admin/users/
+[pid: 18884|app: 0|req: 1/12] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:10 2020] POST /api/admin/users/ => generated 233 bytes in 224 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 18882|app: 0|req: 1/12] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:10 2020] POST /api/admin/users/ => generated 233 bytes in 223 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 9/13] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:19 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 10/14] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:22 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 18883|app: 0|req: 3/15] 159.226.29.55 () {50 vars in 1032 bytes} [Sun Feb 16 00:15:28 2020] POST /api/admin/users/ => generated 18 bytes in 114 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 11/16] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:29 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 12/17] 159.226.29.55 () {50 vars in 1032 bytes} [Sun Feb 16 00:15:38 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 13/18] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:43 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 14/19] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:47 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 15/20] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:48 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 16/21] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:15:50 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 18885|app: 0|req: 17/22] 159.226.29.55 () {50 vars in 1032 bytes} [Sun Feb 16 00:15:59 2020] POST /api/admin/users/ => generated 233 bytes in 4 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 18/23] 159.226.29.55 () {50 vars in 1012 bytes} [Sun Feb 16 00:16:01 2020] POST /api/admin/users/ => generated 18 bytes in 115 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 18884|app: 0|req: 2/24] 159.226.29.55 () {50 vars in 1010 bytes} [Sun Feb 16 00:16:17 2020] POST /api/auth/login/ => generated 110 bytes in 234 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 18882|app: 0|req: 2/25] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 00:16:17 2020] GET /api/personinfo/?userid=12 => generated 2 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 19/26] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 00:16:22 2020] GET /api/personinfo/?userid=12 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 20/27] 159.226.29.55 () {44 vars in 932 bytes} [Sun Feb 16 00:16:25 2020] GET /api/personinfo/?search=&userid=12 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 21/28] 159.226.29.55 () {50 vars in 1030 bytes} [Sun Feb 16 00:16:27 2020] POST /api/auth/login/ => generated 110 bytes in 230 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 22/29] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:16:27 2020] GET /api/personinfo/?userid=11 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 18885|app: 0|req: 23/30] 159.226.29.55 () {50 vars in 1076 bytes} [Sun Feb 16 00:17:26 2020] POST /api/personinfo/ => generated 419 bytes in 21 msecs (HTTP/1.1 201) 5 headers in 161 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 24/31] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:17:56 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 25/32] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:00 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 26/33] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:09 2020] POST /api/personinfo/ => generated 71 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 27/34] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:10 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 28/35] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:10 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 29/36] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:11 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 30/37] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:12 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 31/38] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:12 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18884|app: 0|req: 3/39] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:12 2020] POST /api/personinfo/ => generated 71 bytes in 16 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 32/40] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:13 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18883|app: 0|req: 4/41] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:13 2020] POST /api/personinfo/ => generated 71 bytes in 12 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18884|app: 0|req: 4/42] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:13 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 33/43] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:16 2020] POST /api/personinfo/ => generated 71 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18883|app: 0|req: 5/44] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:16 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 34/45] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:17 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18884|app: 0|req: 5/46] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:17 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18884|app: 0|req: 6/47] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:18 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18883|app: 0|req: 6/48] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:47 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 35/49] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:52 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 36/50] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:53 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 37/51] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:53 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 38/52] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:18:53 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 39/53] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:12 2020] POST /api/personinfo/ => generated 71 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 40/54] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:12 2020] POST /api/personinfo/ => generated 71 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 41/55] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:12 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 42/56] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:13 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 43/57] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:13 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 44/58] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:23 2020] POST /api/personinfo/ => generated 71 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 45/59] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:31 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 46/60] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:19:43 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 47/61] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:20:07 2020] POST /api/personinfo/ => generated 71 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 48/62] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:20:08 2020] POST /api/personinfo/ => generated 71 bytes in 12 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 49/63] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:20:08 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 18885|app: 0|req: 50/64] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:20:10 2020] POST /api/personinfo/ => generated 71 bytes in 9 msecs (HTTP/1.1 400) 5 headers in 164 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8082)
+running /usr/local/python3/bin/uwsgi
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:29:05 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8082 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Feb 13 2020, 13:26:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+Set PythonHome to /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1ffee40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1ffee40 pid: 18880 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 18880)
+spawned uWSGI worker 1 (pid: 19122, cores: 1)
+spawned uWSGI worker 2 (pid: 19123, cores: 1)
+spawned uWSGI worker 3 (pid: 19124, cores: 1)
+spawned uWSGI worker 4 (pid: 19125, cores: 1)
+Sun Feb 16 00:29:14 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Feb 16 00:29:14 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Feb 16 00:29:14 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:29:25 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:29:26 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:29:28 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:29:31 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8082).
+bind(): Address already in use [core/socket.c line 769]
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 16 00:30:03 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8082 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Feb 13 2020, 13:26:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+Set PythonHome to /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x172b390
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x172b390 pid: 19150 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19150)
+spawned uWSGI worker 1 (pid: 19152, cores: 1)
+spawned uWSGI worker 2 (pid: 19153, cores: 1)
+spawned uWSGI worker 3 (pid: 19154, cores: 1)
+spawned uWSGI worker 4 (pid: 19155, cores: 1)
+[pid: 19154|app: 0|req: 1/1] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:30:14 2020] GET /api/personinfo/?userid=11 => generated 421 bytes in 249 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 1/2] 159.226.29.55 () {44 vars in 942 bytes} [Sun Feb 16 00:30:17 2020] GET /api/personinfo/21/?userid=11 => generated 419 bytes in 229 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 2/3] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 00:30:25 2020] GET /api/personinfo/?userid=12 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 19153|app: 0|req: 1/4] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 00:30:31 2020] GET /api/personinfo/?userid=12 => generated 2 bytes in 224 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 2/5] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:30:34 2020] GET /api/personinfo/?userid=11 => generated 421 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 3/6] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:32:03 2020] POST /api/personinfo/ => generated 450 bytes in 23 msecs (HTTP/1.1 201) 5 headers in 161 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 4/7] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 00:32:03 2020] GET /api/personinfo/?userid=12 => generated 452 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 5/8] 159.226.29.55 () {44 vars in 922 bytes} [Sun Feb 16 00:32:36 2020] GET /api/personinfo/22/?userid=12 => generated 450 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 6/9] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 00:32:44 2020] GET /api/personinfo/?userid=12 => generated 452 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 7/10] 159.226.29.55 () {44 vars in 932 bytes} [Sun Feb 16 00:32:46 2020] GET /api/personinfo/?search=&userid=12 => generated 452 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 3/11] 159.226.29.55 () {50 vars in 1076 bytes} [Sun Feb 16 00:35:01 2020] POST /api/personinfo/ => generated 413 bytes in 23 msecs (HTTP/1.1 201) 5 headers in 161 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 8/12] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:35:02 2020] GET /api/personinfo/?userid=11 => generated 835 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 4/13] 159.226.29.55 () {44 vars in 942 bytes} [Sun Feb 16 00:35:05 2020] GET /api/personinfo/23/?userid=11 => generated 413 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 19152|app: 0|req: 1/14] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:35:11 2020] GET /api/personinfo/?userid=11 => generated 835 bytes in 236 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 19155|app: 0|req: 9/15] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:35:11 2020] POST /api/personinfo/ => generated 212 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 19153|app: 0|req: 2/16] 159.226.29.55 () {44 vars in 942 bytes} [Sun Feb 16 00:35:12 2020] GET /api/personinfo/21/?userid=11 => generated 419 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 5/17] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:35:14 2020] GET /api/personinfo/?userid=11 => generated 835 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 19153|app: 0|req: 3/18] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:35:16 2020] POST /api/personinfo/ => generated 212 bytes in 13 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 19154|app: 0|req: 6/19] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:35:20 2020] POST /api/personinfo/ => generated 212 bytes in 10 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 10/20] 159.226.29.55 () {44 vars in 952 bytes} [Sun Feb 16 00:35:32 2020] GET /api/personinfo/?search=&userid=11 => generated 835 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19152|app: 0|req: 2/21] 159.226.29.55 () {44 vars in 942 bytes} [Sun Feb 16 00:35:35 2020] GET /api/personinfo/23/?userid=11 => generated 413 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 11/22] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:35:36 2020] GET /api/personinfo/?userid=11 => generated 835 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 12/23] 159.226.29.55 () {44 vars in 952 bytes} [Sun Feb 16 00:35:44 2020] GET /api/personinfo/?search=&userid=11 => generated 835 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 13/24] 159.226.29.55 () {44 vars in 942 bytes} [Sun Feb 16 00:35:46 2020] GET /api/personinfo/23/?userid=11 => generated 413 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+Bad Request: /api/personinfo/
+[pid: 19152|app: 0|req: 3/25] 159.226.29.55 () {50 vars in 1056 bytes} [Sun Feb 16 00:35:46 2020] POST /api/personinfo/ => generated 107 bytes in 12 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 14/26] 159.226.29.55 () {44 vars in 936 bytes} [Sun Feb 16 00:35:47 2020] GET /api/personinfo/?userid=11 => generated 835 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 15/27] 159.226.29.55 () {44 vars in 916 bytes} [Sun Feb 16 14:30:50 2020] GET /api/personinfo/?userid=12 => generated 452 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 16/28] 159.226.29.55 () {46 vars in 950 bytes} [Sun Feb 16 14:30:55 2020] DELETE /api/auth/logout/ => generated 2 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 7/29] 159.226.29.55 () {50 vars in 1010 bytes} [Sun Feb 16 14:30:57 2020] POST /api/auth/login/ => generated 118 bytes in 235 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 19152|app: 0|req: 4/30] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 14:30:57 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 8/31] 159.226.29.55 () {46 vars in 950 bytes} [Sun Feb 16 14:31:01 2020] DELETE /api/auth/logout/ => generated 2 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 17/32] 159.226.29.55 () {50 vars in 1010 bytes} [Sun Feb 16 14:31:08 2020] POST /api/auth/login/ => generated 120 bytes in 232 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 19153|app: 0|req: 4/33] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 14:31:08 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 18/34] 159.226.29.55 () {44 vars in 930 bytes} [Sun Feb 16 14:31:12 2020] GET /api/personinfo/?search=&userid=1 => generated 2743 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 9/35] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 14:31:14 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 19/36] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 14:31:16 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 20/37] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 14:31:20 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 10/38] 159.226.29.55 () {44 vars in 920 bytes} [Sun Feb 16 14:31:22 2020] GET /api/personinfo/18/?userid=1 => generated 422 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 21/39] 159.226.29.55 () {44 vars in 914 bytes} [Sun Feb 16 14:31:26 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+Not Found: /rest/api/2/serverInfo
+[pid: 19155|app: 0|req: 22/40] 159.226.17.34 () {40 vars in 586 bytes} [Sun Feb 16 18:02:34 2020] GET /rest/api/2/serverInfo => generated 4040 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /rest/api/2.0.alpha1/serverInfo
+[pid: 19155|app: 0|req: 23/41] 159.226.17.34 () {40 vars in 604 bytes} [Sun Feb 16 18:02:35 2020] GET /rest/api/2.0.alpha1/serverInfo => generated 4067 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /jira/rest/api/2/serverInfo
+[pid: 19155|app: 0|req: 24/42] 159.226.17.34 () {40 vars in 596 bytes} [Sun Feb 16 18:02:35 2020] GET /jira/rest/api/2/serverInfo => generated 4055 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /jira/rest/api/2.0.alpha1/serverInfo
+[pid: 19155|app: 0|req: 25/43] 159.226.17.34 () {40 vars in 614 bytes} [Sun Feb 16 18:02:35 2020] GET /jira/rest/api/2.0.alpha1/serverInfo => generated 4082 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /doc/api/
+[pid: 19155|app: 0|req: 26/44] 159.226.17.37 () {40 vars in 616 bytes} [Sun Feb 16 19:32:46 2020] GET /doc/api/ => generated 4004 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /common/config/api.ini
+[pid: 19155|app: 0|req: 27/45] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:32:48 2020] GET /common/config/api.ini => generated 4043 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /apibuild.pyc
+[pid: 19155|app: 0|req: 28/46] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:32:57 2020] GET /apibuild.pyc => generated 4016 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/swagger-ui.html
+[pid: 19155|app: 0|req: 29/47] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:32:57 2020] GET /api/swagger-ui.html => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/error_log
+[pid: 19155|app: 0|req: 30/48] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:32:57 2020] GET /api/error_log => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 31/49] 159.226.17.37 () {40 vars in 608 bytes} [Sun Feb 16 19:32:57 2020] GET /api/ => generated 2 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /apierror_page/
+[pid: 19155|app: 0|req: 32/50] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:32:57 2020] GET /apierror_page/ => generated 4022 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /apierror_page/
+[pid: 19155|app: 0|req: 33/51] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:32:57 2020] GET /apierror_page/ => generated 4022 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api.log
+[pid: 19155|app: 0|req: 34/52] 159.226.17.37 () {40 vars in 614 bytes} [Sun Feb 16 19:32:57 2020] GET /api.log => generated 4001 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 35/53] 159.226.17.37 () {40 vars in 606 bytes} [Sun Feb 16 19:32:57 2020] GET /api => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 36/54] 159.226.17.37 () {40 vars in 608 bytes} [Sun Feb 16 19:32:57 2020] GET /api/ => generated 2 bytes in 0 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /apierror_page
+[pid: 19155|app: 0|req: 37/55] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:32:57 2020] GET /apierror_page => generated 4019 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /apierror_page
+[pid: 19155|app: 0|req: 38/56] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:32:57 2020] GET /apierror_page => generated 4019 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 11/57] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:01 2020] GET /api => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+Unauthorized: /api/exportexcel/
+[pid: 19155|app: 0|req: 39/58] 159.226.17.37 () {40 vars in 665 bytes} [Sun Feb 16 19:34:02 2020] GET /api/exportexcel/?userid= => generated 86 bytes in 1 msecs (HTTP/1.1 401) 6 headers in 184 bytes (1 switches on core 0)
+Unauthorized: /api/exportexcel/
+[pid: 19153|app: 0|req: 5/59] 159.226.17.37 () {42 vars in 689 bytes} [Sun Feb 16 19:34:03 2020] GET /api/exportexcel/?userid= => generated 86 bytes in 2 msecs (HTTP/1.1 401) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 40/60] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/ => generated 2 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /api/examples/servlets/servlet/SessionExample
+[pid: 19155|app: 0|req: 41/61] 159.226.17.37 () {44 vars in 805 bytes} [Sun Feb 16 19:34:07 2020] POST /api/examples/servlets/servlet/SessionExample => generated 6836 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/plus/recommend.php
+[pid: 19154|app: 0|req: 12/62] 159.226.17.37 () {44 vars in 765 bytes} [Sun Feb 16 19:34:07 2020] POST /api/plus/recommend.php => generated 6770 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Method Not Allowed: /api/
+[pid: 19155|app: 0|req: 42/63] 159.226.17.37 () {44 vars in 725 bytes} [Sun Feb 16 19:34:07 2020] POST /api/ => generated 90 bytes in 0 msecs (HTTP/1.1 405) 5 headers in 165 bytes (1 switches on core 0)
+Not Found: /api/config-browser/actionNames.action
+[pid: 19155|app: 0|req: 43/64] 159.226.17.37 () {44 vars in 793 bytes} [Sun Feb 16 19:34:07 2020] POST /api/config-browser/actionNames.action => generated 6815 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/struts2-showcase/config-browser/actionNames.action
+[pid: 19153|app: 0|req: 6/65] 159.226.17.37 () {44 vars in 827 bytes} [Sun Feb 16 19:34:07 2020] POST /api/struts2-showcase/config-browser/actionNames.action => generated 6866 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/phpmyadmin/
+[pid: 19155|app: 0|req: 44/66] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:07 2020] GET /api/phpmyadmin/ => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.jsp
+[pid: 19155|app: 0|req: 45/67] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/login.jsp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.html
+[pid: 19155|app: 0|req: 46/68] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:07 2020] GET /api/admin.html => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 47/69] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:07 2020] GET /api/admin/ => generated 53 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 149 bytes (1 switches on core 0)
+Not Found: /api/adminerror_page/
+[pid: 19155|app: 0|req: 48/70] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:07 2020] GET /api/adminerror_page/ => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminerror_page/
+[pid: 19153|app: 0|req: 7/71] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:07 2020] GET /api/adminerror_page/ => generated 6763 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/.svn/
+[pid: 19152|app: 0|req: 5/72] 159.226.17.37 () {40 vars in 622 bytes} [Sun Feb 16 19:34:07 2020] GET /api/.svn/ => generated 60 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /api/.svn/entries
+[pid: 19155|app: 0|req: 49/73] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:07 2020] GET /api/.svn/entries => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/server-info
+[pid: 19155|app: 0|req: 50/74] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:07 2020] GET /api/server-info => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/server-status
+[pid: 19154|app: 0|req: 13/75] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:07 2020] GET /api/server-status => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/webadmin/
+[pid: 19155|app: 0|req: 51/76] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/webadmin/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/inf.php
+[pid: 19154|app: 0|req: 14/77] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/inf.php => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/info.php
+[pid: 19154|app: 0|req: 15/78] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/info.php => generated 6739 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin-console
+[pid: 19155|app: 0|req: 52/79] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:07 2020] GET /api/admin-console => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/web-console
+[pid: 19155|app: 0|req: 53/80] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:07 2020] GET /api/web-console => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/administrators/
+[pid: 19155|app: 0|req: 54/81] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:07 2020] GET /api/administrators/ => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/administrator/
+[pid: 19155|app: 0|req: 55/82] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:07 2020] GET /api/administrator/ => generated 6757 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/system/
+[pid: 19155|app: 0|req: 56/83] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/system/ => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/console
+[pid: 19155|app: 0|req: 57/84] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/console => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/weblogin/
+[pid: 19155|app: 0|req: 58/85] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/weblogin/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/work/
+[pid: 19155|app: 0|req: 59/86] 159.226.17.37 () {40 vars in 622 bytes} [Sun Feb 16 19:34:07 2020] GET /api/work/ => generated 6730 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/src/
+[pid: 19155|app: 0|req: 60/87] 159.226.17.37 () {40 vars in 620 bytes} [Sun Feb 16 19:34:07 2020] GET /api/src/ => generated 6727 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/editor/filemanager/browser/default/browser.html
+[pid: 19155|app: 0|req: 61/88] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:07 2020] POST /api/FCKeditor/editor/filemanager/browser/default/browser.html => generated 6887 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.do
+[pid: 19155|app: 0|req: 62/89] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.do => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.htm
+[pid: 19155|app: 0|req: 63/90] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.htm => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.html
+[pid: 19155|app: 0|req: 64/91] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.html => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.jsp
+[pid: 19155|app: 0|req: 65/92] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.jsp => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.php
+[pid: 19155|app: 0|req: 66/93] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.php => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.asp
+[pid: 19155|app: 0|req: 67/94] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.asp => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/inc/conn.inc
+[pid: 19155|app: 0|req: 68/95] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:07 2020] GET /api/inc/conn.inc => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/editor/filemanager
+[pid: 19155|app: 0|req: 69/96] 159.226.17.37 () {40 vars in 648 bytes} [Sun Feb 16 19:34:07 2020] GET /api/editor/filemanager => generated 6769 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/editor/
+[pid: 19155|app: 0|req: 70/97] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/editor/ => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/db/ewebeditor.mdb
+[pid: 19155|app: 0|req: 71/98] 159.226.17.37 () {44 vars in 781 bytes} [Sun Feb 16 19:34:07 2020] POST /api/eWebEditor/db/ewebeditor.mdb => generated 6800 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/Admin_Login.asp
+[pid: 19155|app: 0|req: 72/99] 159.226.17.37 () {44 vars in 777 bytes} [Sun Feb 16 19:34:07 2020] POST /api/eWebEditor/Admin_Login.asp => generated 6794 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/upload/
+[pid: 19155|app: 0|req: 73/100] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/upload/ => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login/
+[pid: 19155|app: 0|req: 74/101] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:07 2020] GET /api/login/ => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/iisadmin/
+[pid: 19155|app: 0|req: 75/102] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/iisadmin/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/doc/
+[pid: 19155|app: 0|req: 76/103] 159.226.17.37 () {40 vars in 620 bytes} [Sun Feb 16 19:34:07 2020] GET /api/doc/ => generated 6727 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/connections/
+[pid: 19155|app: 0|req: 77/104] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:07 2020] GET /api/connections/ => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/common/
+[pid: 19152|app: 0|req: 6/105] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/common/ => generated 6736 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/jsrpc.php
+[pid: 19154|app: 0|req: 16/106] 159.226.17.37 () {44 vars in 747 bytes} [Sun Feb 16 19:34:07 2020] POST /api/jsrpc.php => generated 6743 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/jsrpc.php
+[pid: 19155|app: 0|req: 78/107] 159.226.17.37 () {44 vars in 747 bytes} [Sun Feb 16 19:34:07 2020] POST /api/jsrpc.php => generated 6743 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/seeyon/services/authorityService
+[pid: 19155|app: 0|req: 79/108] 159.226.17.37 () {44 vars in 789 bytes} [Sun Feb 16 19:34:07 2020] POST /api/seeyon/services/authorityService => generated 6812 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/uddiexplorer/SearchPublicRegistries.jsp
+[pid: 19155|app: 0|req: 80/109] 159.226.17.37 () {44 vars in 807 bytes} [Sun Feb 16 19:34:07 2020] POST /api/uddiexplorer/SearchPublicRegistries.jsp => generated 6833 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/struts/webconsole.html
+[pid: 19155|app: 0|req: 81/110] 159.226.17.37 () {44 vars in 769 bytes} [Sun Feb 16 19:34:07 2020] POST /api/struts/webconsole.html => generated 6782 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/theme/META-INF/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/%C0%AE%C0%AE/home/glassfish/glassfish4/glassfish/domains/domain1/config/
+[pid: 19155|app: 0|req: 82/111] 159.226.17.37 () {44 vars in 1161 bytes} [Sun Feb 16 19:34:07 2020] POST /api/theme/META-INF/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/home/glassfish/glassfish4/glassfish/domains/domain1/config/ => generated 7690 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/examples/servlets/servlet/SessionExample
+[pid: 19155|app: 0|req: 83/112] 159.226.17.37 () {44 vars in 805 bytes} [Sun Feb 16 19:34:07 2020] POST /api/examples/servlets/servlet/SessionExample => generated 6836 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/plus/recommend.php
+[pid: 19155|app: 0|req: 84/113] 159.226.17.37 () {44 vars in 765 bytes} [Sun Feb 16 19:34:07 2020] POST /api/plus/recommend.php => generated 6770 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Method Not Allowed: /api/
+[pid: 19155|app: 0|req: 85/114] 159.226.17.37 () {44 vars in 725 bytes} [Sun Feb 16 19:34:07 2020] POST /api/ => generated 90 bytes in 0 msecs (HTTP/1.1 405) 5 headers in 165 bytes (1 switches on core 0)
+Not Found: /api/config-browser/actionNames.action
+[pid: 19155|app: 0|req: 86/115] 159.226.17.37 () {44 vars in 793 bytes} [Sun Feb 16 19:34:07 2020] POST /api/config-browser/actionNames.action => generated 6815 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/struts2-showcase/config-browser/actionNames.action
+[pid: 19155|app: 0|req: 87/116] 159.226.17.37 () {44 vars in 827 bytes} [Sun Feb 16 19:34:07 2020] POST /api/struts2-showcase/config-browser/actionNames.action => generated 6866 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/phpmyadmin/
+[pid: 19155|app: 0|req: 88/117] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:07 2020] GET /api/phpmyadmin/ => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.jsp
+[pid: 19155|app: 0|req: 89/118] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/login.jsp => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.html
+[pid: 19155|app: 0|req: 90/119] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:07 2020] GET /api/admin.html => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 91/120] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:07 2020] GET /api/admin/ => generated 53 bytes in 0 msecs (HTTP/1.1 200) 5 headers in 149 bytes (1 switches on core 0)
+Not Found: /api/adminerror_page/
+[pid: 19155|app: 0|req: 92/121] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:07 2020] GET /api/adminerror_page/ => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminerror_page/
+[pid: 19155|app: 0|req: 93/122] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:07 2020] GET /api/adminerror_page/ => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/.svn/
+[pid: 19155|app: 0|req: 94/123] 159.226.17.37 () {40 vars in 622 bytes} [Sun Feb 16 19:34:07 2020] GET /api/.svn/ => generated 60 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /api/.svn/entries
+[pid: 19155|app: 0|req: 95/124] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:07 2020] GET /api/.svn/entries => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/server-info
+[pid: 19155|app: 0|req: 96/125] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:07 2020] GET /api/server-info => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/server-status
+[pid: 19155|app: 0|req: 97/126] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:07 2020] GET /api/server-status => generated 6754 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/webadmin/
+[pid: 19155|app: 0|req: 98/127] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/webadmin/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/inf.php
+[pid: 19155|app: 0|req: 99/128] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/inf.php => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/info.php
+[pid: 19155|app: 0|req: 100/129] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/info.php => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin-console
+[pid: 19155|app: 0|req: 101/130] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:07 2020] GET /api/admin-console => generated 6754 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/web-console
+[pid: 19155|app: 0|req: 102/131] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:07 2020] GET /api/web-console => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/administrators/
+[pid: 19155|app: 0|req: 103/132] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:07 2020] GET /api/administrators/ => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/administrator/
+[pid: 19155|app: 0|req: 104/133] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:07 2020] GET /api/administrator/ => generated 6757 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/system/
+[pid: 19155|app: 0|req: 105/134] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/system/ => generated 6736 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/console
+[pid: 19155|app: 0|req: 106/135] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/console => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/weblogin/
+[pid: 19155|app: 0|req: 107/136] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/weblogin/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/work/
+[pid: 19155|app: 0|req: 108/137] 159.226.17.37 () {40 vars in 622 bytes} [Sun Feb 16 19:34:07 2020] GET /api/work/ => generated 6730 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/src/
+[pid: 19155|app: 0|req: 109/138] 159.226.17.37 () {40 vars in 620 bytes} [Sun Feb 16 19:34:07 2020] GET /api/src/ => generated 6727 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/editor/filemanager/upload/php/upload.php
+[pid: 19155|app: 0|req: 110/139] 159.226.17.37 () {44 vars in 827 bytes} [Sun Feb 16 19:34:07 2020] POST /api/FCKeditor/editor/filemanager/upload/php/upload.php => generated 6866 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/upload/php/upload.php
+[pid: 19155|app: 0|req: 111/140] 159.226.17.37 () {44 vars in 827 bytes} [Sun Feb 16 19:34:07 2020] POST /api/fckeditor/editor/filemanager/upload/php/upload.php => generated 6866 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/editor/filemanager/browser/default/browser.html
+[pid: 19155|app: 0|req: 112/141] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:07 2020] POST /api/FCKeditor/editor/filemanager/browser/default/browser.html => generated 6887 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector
+[pid: 19155|app: 0|req: 113/142] 159.226.17.37 () {44 vars in 865 bytes} [Sun Feb 16 19:34:07 2020] POST /api/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector => generated 6923 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/browser/default/browser.html
+[pid: 19155|app: 0|req: 114/143] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:07 2020] POST /api/fckeditor/editor/filemanager/browser/default/browser.html => generated 6887 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector
+[pid: 19155|app: 0|req: 115/144] 159.226.17.37 () {44 vars in 865 bytes} [Sun Feb 16 19:34:07 2020] POST /api/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector => generated 6923 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/editor/filemanager/browser/default/browser.html
+[pid: 19155|app: 0|req: 116/145] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:07 2020] POST /api/FCKeditor/editor/filemanager/browser/default/browser.html => generated 6887 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/editor/filemanager/browser/default/browser.html
+[pid: 19155|app: 0|req: 117/146] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:07 2020] POST /api/FCKeditor/editor/filemanager/browser/default/browser.html => generated 6887 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.do
+[pid: 19155|app: 0|req: 118/147] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.do => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.htm
+[pid: 19155|app: 0|req: 119/148] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.htm => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.html
+[pid: 19155|app: 0|req: 120/149] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.html => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.jsp
+[pid: 19155|app: 0|req: 121/150] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.jsp => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.php
+[pid: 19155|app: 0|req: 122/151] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.php => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/test.asp
+[pid: 19155|app: 0|req: 123/152] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:07 2020] GET /api/test.asp => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/inc/conn.inc
+[pid: 19155|app: 0|req: 124/153] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:07 2020] GET /api/inc/conn.inc => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/editor/filemanager
+[pid: 19155|app: 0|req: 125/154] 159.226.17.37 () {40 vars in 648 bytes} [Sun Feb 16 19:34:08 2020] GET /api/editor/filemanager => generated 6769 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/editor/
+[pid: 19154|app: 0|req: 17/155] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:08 2020] GET /api/editor/ => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/db/ewebeditor.mdb
+[pid: 19155|app: 0|req: 126/156] 159.226.17.37 () {44 vars in 781 bytes} [Sun Feb 16 19:34:08 2020] POST /api/eWebEditor/db/ewebeditor.mdb => generated 6800 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/Admin_Login.asp
+[pid: 19155|app: 0|req: 127/157] 159.226.17.37 () {44 vars in 777 bytes} [Sun Feb 16 19:34:08 2020] POST /api/eWebEditor/Admin_Login.asp => generated 6794 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/upload/
+[pid: 19155|app: 0|req: 128/158] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:08 2020] GET /api/upload/ => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login/
+[pid: 19155|app: 0|req: 129/159] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:08 2020] GET /api/login/ => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/iisadmin/
+[pid: 19155|app: 0|req: 130/160] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:08 2020] GET /api/iisadmin/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/doc/
+[pid: 19155|app: 0|req: 131/161] 159.226.17.37 () {40 vars in 620 bytes} [Sun Feb 16 19:34:08 2020] GET /api/doc/ => generated 6727 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/connections/
+[pid: 19155|app: 0|req: 132/162] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:08 2020] GET /api/connections/ => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/common/
+[pid: 19155|app: 0|req: 133/163] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:08 2020] GET /api/common/ => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/connectors/aspx/connector.aspx
+[pid: 19155|app: 0|req: 134/164] 159.226.17.37 () {44 vars in 845 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/connectors/aspx/connector.aspx => generated 6893 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/connectors/php/connector.php
+[pid: 19155|app: 0|req: 135/165] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/connectors/php/connector.php => generated 6887 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/connectors/cfm/connector.cfm
+[pid: 19153|app: 0|req: 8/166] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/connectors/cfm/connector.cfm => generated 6887 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/connectors/asp/connector.asp
+[pid: 19154|app: 0|req: 18/167] 159.226.17.37 () {44 vars in 841 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/connectors/asp/connector.asp => generated 6887 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/browser/default/connectors/cfm/connector.cfm
+[pid: 19154|app: 0|req: 19/168] 159.226.17.37 () {44 vars in 873 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/browser/default/connectors/cfm/connector.cfm => generated 6935 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx
+[pid: 19154|app: 0|req: 20/169] 159.226.17.37 () {44 vars in 877 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx => generated 6941 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp
+[pid: 19154|app: 0|req: 21/170] 159.226.17.37 () {44 vars in 873 bytes} [Sun Feb 16 19:34:08 2020] POST /api/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp => generated 6935 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/_whatsnew.html
+[pid: 19155|app: 0|req: 136/171] 159.226.17.37 () {44 vars in 773 bytes} [Sun Feb 16 19:34:08 2020] POST /api/FCKeditor/_whatsnew.html => generated 6788 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/FCKeditor/_samples/default.html
+[pid: 19155|app: 0|req: 137/172] 159.226.17.37 () {44 vars in 787 bytes} [Sun Feb 16 19:34:08 2020] POST /api/FCKeditor/_samples/default.html => generated 6809 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/Admin_Default.asp
+[pid: 19155|app: 0|req: 138/173] 159.226.17.37 () {40 vars in 668 bytes} [Sun Feb 16 19:34:08 2020] GET /api/eWebEditor/Admin_Default.asp => generated 6799 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ewebeditornet/upload.aspx
+[pid: 19155|app: 0|req: 139/174] 159.226.17.37 () {44 vars in 775 bytes} [Sun Feb 16 19:34:08 2020] POST /api/ewebeditornet/upload.aspx => generated 6791 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWeb_Editor/Admin_Login.aspx
+[pid: 19155|app: 0|req: 140/175] 159.226.17.37 () {44 vars in 781 bytes} [Sun Feb 16 19:34:08 2020] POST /api/eWeb_Editor/Admin_Login.aspx => generated 6800 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/Admin_Login.aspx
+[pid: 19153|app: 0|req: 9/176] 159.226.17.37 () {44 vars in 779 bytes} [Sun Feb 16 19:34:08 2020] POST /api/eWebEditor/Admin_Login.aspx => generated 6797 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWeb_Editor/Admin_Login.asp
+[pid: 19155|app: 0|req: 141/177] 159.226.17.37 () {44 vars in 779 bytes} [Sun Feb 16 19:34:08 2020] POST /api/eWeb_Editor/Admin_Login.asp => generated 6797 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/eWebEditor/Admin_Login.asp
+[pid: 19155|app: 0|req: 142/178] 159.226.17.37 () {44 vars in 777 bytes} [Sun Feb 16 19:34:08 2020] POST /api/eWebEditor/Admin_Login.asp => generated 6794 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ConversionReport.txt
+[pid: 19152|app: 0|req: 7/179] 159.226.17.37 () {40 vars in 652 bytes} [Sun Feb 16 19:34:09 2020] GET /api/ConversionReport.txt => generated 6775 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/Output-Build.txt
+[pid: 19153|app: 0|req: 10/180] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:09 2020] GET /api/Output-Build.txt => generated 6763 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/WS_FTP.log
+[pid: 19154|app: 0|req: 22/181] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/WS_FTP.log => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/logs/errors.log
+[pid: 19154|app: 0|req: 23/182] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/logs/errors.log => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/Web.config
+[pid: 19155|app: 0|req: 143/183] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/Web.config => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/web.xml
+[pid: 19155|app: 0|req: 144/184] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:09 2020] GET /api/web.xml => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/App.config
+[pid: 19155|app: 0|req: 145/185] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/App.config => generated 6745 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/config.web
+[pid: 19155|app: 0|req: 146/186] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/config.web => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 147/187] 159.226.17.37 () {40 vars in 612 bytes} [Sun Feb 16 19:34:09 2020] GET /api/ => generated 2 bytes in 0 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /api/wsc/foreignnew/admin/admin.asp
+[pid: 19155|app: 0|req: 148/188] 159.226.17.37 () {40 vars in 672 bytes} [Sun Feb 16 19:34:09 2020] GET /api/wsc/foreignnew/admin/admin.asp => generated 6805 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/console/login/LoginForm.jsp
+[pid: 19155|app: 0|req: 149/189] 159.226.17.37 () {40 vars in 666 bytes} [Sun Feb 16 19:34:09 2020] GET /api/console/login/LoginForm.jsp => generated 6796 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/UserManage.asp
+[pid: 19155|app: 0|req: 150/190] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/UserManage.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminjoin.asp
+[pid: 19155|app: 0|req: 151/191] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adminjoin.asp => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/UserJoin.asp
+[pid: 19155|app: 0|req: 152/192] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/UserJoin.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/UserModify.asp
+[pid: 19155|app: 0|req: 153/193] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/UserModify.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/super_index.asp
+[pid: 19155|app: 0|req: 154/194] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/super_index.asp => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login_user.asp
+[pid: 19155|app: 0|req: 155/195] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/login_user.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login_admin.aspx
+[pid: 19155|app: 0|req: 156/196] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:09 2020] GET /api/login_admin.aspx => generated 6763 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login_admin.asp
+[pid: 19155|app: 0|req: 157/197] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/login_admin.asp => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/super_login.asp
+[pid: 19155|app: 0|req: 158/198] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/super_login.asp => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adm_login.asp
+[pid: 19155|app: 0|req: 159/199] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adm_login.asp => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adm_user.asp
+[pid: 19155|app: 0|req: 160/200] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adm_user.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/superuser.asp
+[pid: 19155|app: 0|req: 161/201] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/superuser.asp => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/superman.asp
+[pid: 19155|app: 0|req: 162/202] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/superman.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user888.asp
+[pid: 19155|app: 0|req: 163/203] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:09 2020] GET /api/user888.asp => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user3.asp
+[pid: 19155|app: 0|req: 164/204] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:09 2020] GET /api/user3.asp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user2.asp
+[pid: 19155|app: 0|req: 165/205] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:09 2020] GET /api/user2.asp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user1.asp
+[pid: 19155|app: 0|req: 166/206] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:09 2020] GET /api/user1.asp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin999.asp
+[pid: 19155|app: 0|req: 167/207] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin999.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin666.asp
+[pid: 19155|app: 0|req: 168/208] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin666.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin4.asp
+[pid: 19155|app: 0|req: 169/209] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin4.asp => generated 6745 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin3.asp
+[pid: 19155|app: 0|req: 170/210] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin3.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin2.asp
+[pid: 19155|app: 0|req: 171/211] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin2.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin1.asp
+[pid: 19152|app: 0|req: 8/212] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin1.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/main.asp
+[pid: 19155|app: 0|req: 172/213] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:09 2020] GET /api/main.asp => generated 6739 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adm.asp
+[pid: 19155|app: 0|req: 173/214] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adm.asp => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/checkadmin.asp
+[pid: 19155|app: 0|req: 174/215] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/checkadmin.asp => generated 6757 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_go.asp
+[pid: 19154|app: 0|req: 24/216] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_go.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_main.asp
+[pid: 19155|app: 0|req: 175/217] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_main.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admintab.asp
+[pid: 19155|app: 0|req: 176/218] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admintab.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_del.asp
+[pid: 19155|app: 0|req: 177/219] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_del.asp => generated 6754 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admindel.asp
+[pid: 19155|app: 0|req: 178/220] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admindel.asp => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_delete.asp
+[pid: 19155|app: 0|req: 179/221] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_delete.asp => generated 6763 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admindelete.asp
+[pid: 19155|app: 0|req: 180/222] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admindelete.asp => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_edit.asp
+[pid: 19155|app: 0|req: 181/223] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_edit.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminedit.asp
+[pid: 19155|app: 0|req: 182/224] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adminedit.asp => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/addmember.asp
+[pid: 19153|app: 0|req: 11/225] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/addmember.asp => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminmember.asp
+[pid: 19155|app: 0|req: 183/226] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adminmember.asp => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/editmember.asp
+[pid: 19155|app: 0|req: 184/227] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/editmember.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/members.asp
+[pid: 19155|app: 0|req: 185/228] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:09 2020] GET /api/members.asp => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/member.asp
+[pid: 19155|app: 0|req: 186/229] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:09 2020] GET /api/member.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminadduser.asp
+[pid: 19155|app: 0|req: 187/230] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adminadduser.asp => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adduser.asp
+[pid: 19155|app: 0|req: 188/231] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adduser.asp => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/edituser.asp
+[pid: 19155|app: 0|req: 189/232] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/edituser.asp => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_user.asp
+[pid: 19155|app: 0|req: 190/233] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_user.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminuser.asp
+[pid: 19155|app: 0|req: 191/234] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adminuser.asp => generated 6754 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adduser.asp
+[pid: 19155|app: 0|req: 192/235] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adduser.asp => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/users.asp
+[pid: 19155|app: 0|req: 193/236] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:09 2020] GET /api/users.asp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user.asp
+[pid: 19155|app: 0|req: 194/237] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:09 2020] GET /api/user.asp => generated 6739 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/chkadmin.asp
+[pid: 19155|app: 0|req: 195/238] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/chkadmin.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/chklogin.asp
+[pid: 19153|app: 0|req: 12/239] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:09 2020] GET /api/chklogin.asp => generated 6751 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adm_login.asp
+[pid: 19155|app: 0|req: 196/240] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adm_login.asp => generated 6754 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_login.aspx
+[pid: 19153|app: 0|req: 13/241] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_login.aspx => generated 6763 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_login.asp
+[pid: 19153|app: 0|req: 14/242] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:09 2020] GET /api/admin_login.asp => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminuserlogin.asp
+[pid: 19155|app: 0|req: 197/243] 159.226.17.37 () {40 vars in 648 bytes} [Sun Feb 16 19:34:09 2020] GET /api/adminuserlogin.asp => generated 6769 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminlogin.asp
+[pid: 19155|app: 0|req: 198/244] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:11 2020] GET /api/adminlogin.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/htgl.asp
+[pid: 19155|app: 0|req: 199/245] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:12 2020] GET /api/htgl.asp => generated 6739 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/houtaiguanli.asp
+[pid: 19155|app: 0|req: 200/246] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:13 2020] GET /api/houtaiguanli.asp => generated 6763 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/houtai.asp
+[pid: 19155|app: 0|req: 201/247] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/houtai.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/denglu.asp
+[pid: 19155|app: 0|req: 202/248] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/denglu.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/guanli.asp
+[pid: 19154|app: 0|req: 25/249] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/guanli.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manager.asp
+[pid: 19155|app: 0|req: 203/250] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:13 2020] GET /api/manager.asp => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage.asp
+[pid: 19155|app: 0|req: 204/251] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/manage.asp => generated 6745 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.aspx
+[pid: 19155|app: 0|req: 205/252] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/login.aspx => generated 6745 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.asp
+[pid: 19155|app: 0|req: 206/253] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:13 2020] GET /api/login.asp => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad_manage.asp
+[pid: 19155|app: 0|req: 207/254] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:13 2020] GET /api/ad_manage.asp => generated 6754 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad_login.asp
+[pid: 19155|app: 0|req: 208/255] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:13 2020] GET /api/ad_login.asp => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad.asp
+[pid: 19155|app: 0|req: 209/256] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:13 2020] GET /api/ad.asp => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin888.asp
+[pid: 19155|app: 0|req: 210/257] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:13 2020] GET /api/admin888.asp => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin1.asp
+[pid: 19154|app: 0|req: 26/258] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/admin1.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/index_manage.asp
+[pid: 19155|app: 0|req: 211/259] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:13 2020] GET /api/index_manage.asp => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage_index.asp
+[pid: 19155|app: 0|req: 212/260] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:13 2020] GET /api/manage_index.asp => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage.asp
+[pid: 19155|app: 0|req: 213/261] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:13 2020] GET /api/manage.asp => generated 6745 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/login.asp
+[pid: 19155|app: 0|req: 214/262] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:13 2020] GET /api/admin/login.asp => generated 9343 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/manage.asp
+[pid: 19155|app: 0|req: 215/263] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:13 2020] GET /api/admin/manage.asp => generated 9346 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/default.aspx
+[pid: 19153|app: 0|req: 15/264] 159.226.17.37 () {40 vars in 648 bytes} [Sun Feb 16 19:34:13 2020] GET /api/admin/default.aspx => generated 9352 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/default.asp
+[pid: 19155|app: 0|req: 216/265] 159.226.17.37 () {40 vars in 646 bytes} [Sun Feb 16 19:34:13 2020] GET /api/admin/default.asp => generated 9349 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/index.aspx
+[pid: 19155|app: 0|req: 217/266] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin/index.aspx => generated 9346 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/index.asp
+[pid: 19153|app: 0|req: 16/267] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin/index.asp => generated 9343 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/index_admin.asp
+[pid: 19155|app: 0|req: 218/268] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:14 2020] GET /api/index_admin.asp => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_admin.asp
+[pid: 19155|app: 0|req: 219/269] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_admin.asp => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_index.aspx
+[pid: 19155|app: 0|req: 220/270] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_index.aspx => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_index.asp
+[pid: 19155|app: 0|req: 221/271] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_index.asp => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.asp
+[pid: 19155|app: 0|req: 222/272] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin.asp => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/members
+[pid: 19155|app: 0|req: 223/273] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:14 2020] GET /api/members => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/member
+[pid: 19155|app: 0|req: 224/274] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:14 2020] GET /api/member => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/users
+[pid: 19155|app: 0|req: 225/275] 159.226.17.37 () {40 vars in 622 bytes} [Sun Feb 16 19:34:14 2020] GET /api/users => generated 6730 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user
+[pid: 19152|app: 0|req: 9/276] 159.226.17.37 () {40 vars in 620 bytes} [Sun Feb 16 19:34:14 2020] GET /api/user => generated 6727 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/htgl
+[pid: 19154|app: 0|req: 27/277] 159.226.17.37 () {40 vars in 620 bytes} [Sun Feb 16 19:34:14 2020] GET /api/htgl => generated 6727 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/houtaiguanli
+[pid: 19155|app: 0|req: 226/278] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:14 2020] GET /api/houtaiguanli => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/houtai
+[pid: 19155|app: 0|req: 227/279] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:14 2020] GET /api/houtai => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/denglu
+[pid: 19155|app: 0|req: 228/280] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:14 2020] GET /api/denglu => generated 6733 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/guanli
+[pid: 19153|app: 0|req: 17/281] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:14 2020] GET /api/guanli => generated 6733 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage_index
+[pid: 19153|app: 0|req: 18/282] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:14 2020] GET /api/manage_index => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manager
+[pid: 19152|app: 0|req: 10/283] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:14 2020] GET /api/manager => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage
+[pid: 19154|app: 0|req: 28/284] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:14 2020] GET /api/manage => generated 6733 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login
+[pid: 19153|app: 0|req: 19/285] 159.226.17.37 () {40 vars in 622 bytes} [Sun Feb 16 19:34:14 2020] GET /api/login => generated 6730 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminuserlogin
+[pid: 19155|app: 0|req: 229/286] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:14 2020] GET /api/adminuserlogin => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_login
+[pid: 19155|app: 0|req: 230/287] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_login => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminlogin
+[pid: 19152|app: 0|req: 11/288] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:14 2020] GET /api/adminlogin => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_user
+[pid: 19154|app: 0|req: 29/289] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_user => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminuser
+[pid: 19155|app: 0|req: 231/290] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:14 2020] GET /api/adminuser => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/index_admin
+[pid: 19155|app: 0|req: 232/291] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:14 2020] GET /api/index_admin => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/indexadmin
+[pid: 19153|app: 0|req: 20/292] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:14 2020] GET /api/indexadmin => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_index
+[pid: 19152|app: 0|req: 12/293] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_index => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminindex
+[pid: 19155|app: 0|req: 233/294] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:14 2020] GET /api/adminindex => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_admin
+[pid: 19155|app: 0|req: 234/295] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:14 2020] GET /api/admin_admin => generated 6748 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminadmin
+[pid: 19155|app: 0|req: 235/296] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:15 2020] GET /api/adminadmin => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/administrator
+[pid: 19155|app: 0|req: 236/297] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:18 2020] GET /api/administrator => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adm
+[pid: 19155|app: 0|req: 237/298] 159.226.17.37 () {40 vars in 618 bytes} [Sun Feb 16 19:34:19 2020] GET /api/adm => generated 6724 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin1
+[pid: 19155|app: 0|req: 238/299] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin1 => generated 6733 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad
+[pid: 19155|app: 0|req: 239/300] 159.226.17.37 () {40 vars in 616 bytes} [Sun Feb 16 19:34:19 2020] GET /api/ad => generated 6721 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/operator/
+[pid: 19155|app: 0|req: 240/301] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/operator/ => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admini/
+[pid: 19155|app: 0|req: 241/302] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admini/ => generated 6736 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/gbook/admin/admin_login.asp
+[pid: 19155|app: 0|req: 242/303] 159.226.17.37 () {40 vars in 666 bytes} [Sun Feb 16 19:34:19 2020] GET /api/gbook/admin/admin_login.asp => generated 6796 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/app_data
+[pid: 19155|app: 0|req: 243/304] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:19 2020] GET /api/app_data => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/admin.asp
+[pid: 19153|app: 0|req: 21/305] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/admin.asp => generated 9343 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage/adminlogin.asp
+[pid: 19155|app: 0|req: 244/306] 159.226.17.37 () {40 vars in 654 bytes} [Sun Feb 16 19:34:19 2020] GET /api/manage/adminlogin.asp => generated 6778 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/main.asp
+[pid: 19155|app: 0|req: 245/307] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:19 2020] GET /api/main.asp => generated 6739 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad_manage.asp
+[pid: 19154|app: 0|req: 30/308] 159.226.17.37 () {40 vars in 638 bytes} [Sun Feb 16 19:34:19 2020] GET /api/ad_manage.asp => generated 6754 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad_main.asp
+[pid: 19155|app: 0|req: 246/309] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:19 2020] GET /api/ad_main.asp => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad_login.asp
+[pid: 19155|app: 0|req: 247/310] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:19 2020] GET /api/ad_login.asp => generated 6751 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/ad_in.asp
+[pid: 19155|app: 0|req: 248/311] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/ad_in.asp => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/AdminManage.asp
+[pid: 19155|app: 0|req: 249/312] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:19 2020] GET /api/AdminManage.asp => generated 6760 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_main.asp
+[pid: 19155|app: 0|req: 250/313] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin_main.asp => generated 6757 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/Admin_index.asp
+[pid: 19155|app: 0|req: 251/314] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:19 2020] GET /api/Admin_index.asp => generated 6760 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/manage.asp
+[pid: 19152|app: 0|req: 13/315] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:19 2020] GET /api/manage.asp => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_default.aspx
+[pid: 19153|app: 0|req: 22/316] 159.226.17.37 () {40 vars in 648 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin_default.aspx => generated 6769 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin_default.asp
+[pid: 19155|app: 0|req: 252/317] 159.226.17.37 () {40 vars in 646 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin_default.asp => generated 6766 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user.asp
+[pid: 19155|app: 0|req: 253/318] 159.226.17.37 () {40 vars in 628 bytes} [Sun Feb 16 19:34:19 2020] GET /api/user.asp => generated 6739 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/require
+[pid: 19155|app: 0|req: 254/319] 159.226.17.37 () {40 vars in 626 bytes} [Sun Feb 16 19:34:19 2020] GET /api/require => generated 6736 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/main.asp
+[pid: 19155|app: 0|req: 255/320] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/main.asp => generated 9340 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/member
+[pid: 19155|app: 0|req: 256/321] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:19 2020] GET /api/member => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/system
+[pid: 19155|app: 0|req: 257/322] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:19 2020] GET /api/system => generated 6733 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user_index.php
+[pid: 19155|app: 0|req: 258/323] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:19 2020] GET /api/user_index.php => generated 6757 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.php
+[pid: 19155|app: 0|req: 259/324] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin.php => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.php
+[pid: 19155|app: 0|req: 260/325] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/login.php => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/index.asp/
+[pid: 19155|app: 0|req: 261/326] 159.226.17.37 () {40 vars in 647 bytes} [Sun Feb 16 19:34:19 2020] GET /api/index.asp/?p=login => generated 6753 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/hbcms/user/
+[pid: 19155|app: 0|req: 262/327] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:19 2020] GET /api/hbcms/user/ => generated 6748 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/hbcms/admin/
+[pid: 19152|app: 0|req: 14/328] 159.226.17.37 () {40 vars in 636 bytes} [Sun Feb 16 19:34:19 2020] GET /api/hbcms/admin/ => generated 6751 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/user/login.php
+[pid: 19155|app: 0|req: 263/329] 159.226.17.37 () {40 vars in 640 bytes} [Sun Feb 16 19:34:19 2020] GET /api/user/login.php => generated 6757 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/hiadmin/login.asp
+[pid: 19155|app: 0|req: 264/330] 159.226.17.37 () {40 vars in 646 bytes} [Sun Feb 16 19:34:19 2020] GET /api/hiadmin/login.asp => generated 6766 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/login.aspx
+[pid: 19155|app: 0|req: 265/331] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/login.aspx => generated 9346 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/login.asp
+[pid: 19155|app: 0|req: 266/332] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/login.asp => generated 9343 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/Admin_Manage.asp
+[pid: 19155|app: 0|req: 267/333] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:19 2020] GET /api/Admin_Manage.asp => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.cfm
+[pid: 19155|app: 0|req: 268/334] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/login.cfm => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.jsp
+[pid: 19154|app: 0|req: 31/335] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/login.jsp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.html
+[pid: 19154|app: 0|req: 32/336] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:19 2020] GET /api/login.html => generated 6745 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/login.htm
+[pid: 19155|app: 0|req: 269/337] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/login.htm => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.cfm
+[pid: 19155|app: 0|req: 270/338] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin.cfm => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.jsp
+[pid: 19154|app: 0|req: 33/339] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin.jsp => generated 6742 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/Admin.asp
+[pid: 19154|app: 0|req: 34/340] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/Admin.asp => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/login.asp
+[pid: 19155|app: 0|req: 271/341] 159.226.17.37 () {40 vars in 642 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/login.asp => generated 9343 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/data_backup/
+[pid: 19155|app: 0|req: 272/342] 159.226.17.37 () {40 vars in 648 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/data_backup/ => generated 9352 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin/data/
+[pid: 19155|app: 0|req: 273/343] 159.226.17.37 () {40 vars in 634 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/data/ => generated 9331 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.html
+[pid: 19155|app: 0|req: 274/344] 159.226.17.37 () {40 vars in 632 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin.html => generated 6745 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/admin.htm
+[pid: 19154|app: 0|req: 35/345] 159.226.17.37 () {40 vars in 630 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin.htm => generated 6742 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 275/346] 159.226.17.37 () {40 vars in 624 bytes} [Sun Feb 16 19:34:19 2020] GET /api/admin/ => generated 53 bytes in 0 msecs (HTTP/1.1 200) 5 headers in 149 bytes (1 switches on core 0)
+Not Found: /api/adminerror_page/
+[pid: 19155|app: 0|req: 276/347] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:19 2020] GET /api/adminerror_page/ => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/adminerror_page/
+[pid: 19155|app: 0|req: 277/348] 159.226.17.37 () {40 vars in 644 bytes} [Sun Feb 16 19:34:19 2020] GET /api/adminerror_page/ => generated 6763 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 36/349] 159.226.17.37 () {40 vars in 612 bytes} [Sun Feb 16 19:34:19 2020] GET /api/ => generated 2 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+Method Not Allowed: /api/
+[pid: 19154|app: 0|req: 37/350] 159.226.17.37 () {34 vars in 451 bytes} [Sun Feb 16 19:34:20 2020] POST /api/? => generated 90 bytes in 1 msecs (HTTP/1.1 405) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 278/351] 159.226.17.37 () {40 vars in 612 bytes} [Sun Feb 16 19:34:21 2020] GET /api/ => generated 2 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+Not Found: /api/(#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS)?(#wr=#context[#parameters.obj[0]].getWriter(),#wr.println(#context.get(#parameters.reqobj[0]).getRealPath(#parameters.content[0])),#wr.flush(),#wr.close()):xx.toString.json
+[pid: 19155|app: 0|req: 279/352] 159.226.17.37 () {40 vars in 1390 bytes} [Sun Feb 16 19:34:22 2020] GET /api/%28%23_memberAccess%3d@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS%29%3f(%23wr%3d%23context%5b%23parameters.obj%5b0%5d%5d.getWriter(),%23wr.println(%23context.get(%23parameters.reqobj[0]).getRealPath(%23parameters.content[0])),%23wr.flush(),%23wr.close()):xx.toString.json?reqobj=com.opensymphony.xwork2.dispatcher.HttpServletRequest&obj=com.opensymphony.xwork2.dispatcher.HttpServletResponse&content=secdomain.jsp => generated 7594 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/!(#_memberAccess=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS)?(#wr=#context[#parameters.obj[0]].getWriter(),#wr.println(#context.get(#parameters.reqobj[0]).getRealPath(#parameters.content[0])),#wr.flush(),#wr.close()):xx.toString.json
+[pid: 19155|app: 0|req: 280/353] 159.226.17.37 () {40 vars in 1393 bytes} [Sun Feb 16 19:34:31 2020] GET /api/!%28%23_memberAccess%3d@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS%29%3f(%23wr%3d%23context%5b%23parameters.obj%5b0%5d%5d.getWriter(),%23wr.println(%23context.get(%23parameters.reqobj[0]).getRealPath(%23parameters.content[0])),%23wr.flush(),%23wr.close()):xx.toString.json?reqobj=com.opensymphony.xwork2.dispatcher.HttpServletRequest&obj=com.opensymphony.xwork2.dispatcher.HttpServletResponse&content=secdomain.jsp => generated 7597 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/<script>alert(8408)</script>
+[pid: 19155|app: 0|req: 281/354] 159.226.17.37 () {40 vars in 682 bytes} [Sun Feb 16 19:34:52 2020] GET /api/%3cscript%3ealert%288408%29%3c%2fscript%3e => generated 6831 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/var=<script>alert(8408)</script>
+[pid: 19154|app: 0|req: 38/355] 159.226.17.37 () {40 vars in 692 bytes} [Sun Feb 16 19:34:53 2020] GET /api/var%3d%3cscript%3ealert%288408%29%3c%2fscript%3e => generated 6845 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /api/" onmouseover=alert(8408) var="bad
+[pid: 19155|app: 0|req: 282/356] 159.226.17.37 () {40 vars in 696 bytes} [Sun Feb 16 19:34:54 2020] GET /api/%22%20onmouseover%3dalert%288408%29%20var%3d%22bad => generated 6849 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19154|app: 0|req: 39/357] 159.226.29.55 () {44 vars in 914 bytes} [Mon Feb 17 11:16:18 2020] GET /api/personinfo/?userid=1 => generated 2743 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 283/358] 159.226.29.55 () {46 vars in 950 bytes} [Mon Feb 17 11:16:21 2020] DELETE /api/auth/logout/ => generated 2 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 284/359] 159.226.29.55 () {50 vars in 1010 bytes} [Mon Feb 17 11:16:23 2020] POST /api/auth/login/ => generated 118 bytes in 233 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 285/360] 159.226.29.55 () {44 vars in 914 bytes} [Mon Feb 17 11:16:23 2020] GET /api/personinfo/?userid=5 => generated 2 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 19155|app: 0|req: 286/361] 159.226.29.55 () {44 vars in 930 bytes} [Mon Feb 17 11:16:25 2020] GET /api/personinfo/?search=&userid=5 => generated 2 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8082)
+running /usr/local/python3/bin/uwsgi
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 17 15:51:40 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8082 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Feb 13 2020, 13:26:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+Set PythonHome to /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1d33e40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d33e40 pid: 19150 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 19150)
+spawned uWSGI worker 1 (pid: 16690, cores: 1)
+spawned uWSGI worker 2 (pid: 16691, cores: 1)
+spawned uWSGI worker 3 (pid: 16692, cores: 1)
+spawned uWSGI worker 4 (pid: 16693, cores: 1)
+[uWSGI] getting INI configuration from /home/paul/kill_NCP_ci_fronted/killNCP/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Feb 17 15:52:28 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 13 February 2020 06:04:51
+os: Linux-3.10.0-862.el7.x86_64 #1 SMP Fri Apr 20 16:44:24 UTC 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/paul/kill_NCP_ci_fronted/killNCP
+detected binary path: /usr/local/python3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/paul/kill_NCP_ci_fronted/killNCP
+your processes number limit is 31154
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8082 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Feb 13 2020, 13:26:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+Set PythonHome to /home/paul/kill_NCP_ci_fronted/venv_killncp_ci_fronted
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xde6360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0xde6360 pid: 1007 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1007)
+spawned uWSGI worker 1 (pid: 1105, cores: 1)
+spawned uWSGI worker 2 (pid: 1106, cores: 1)
+spawned uWSGI worker 3 (pid: 1107, cores: 1)
+spawned uWSGI worker 4 (pid: 1108, cores: 1)
+Bad Request: /api/admin/users/
+[pid: 1105|app: 0|req: 1/1] 159.226.29.55 () {52 vars in 1093 bytes} [Mon Feb 17 16:03:51 2020] POST /api/admin/users/ => generated 233 bytes in 3624 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 1108|app: 0|req: 1/2] 159.226.29.55 () {44 vars in 935 bytes} [Mon Feb 17 16:05:41 2020] GET /api/personinfo/?userid=11 => generated 835 bytes in 255 msecs (HTTP/1.1 200) 5 headers in 156 bytes (1 switches on core 0)
