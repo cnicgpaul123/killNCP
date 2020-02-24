@@ -6872,3 +6872,10 @@ Bad Request: /api/auth/login/
 [pid: 21362|app: 0|req: 13/149] 159.226.29.55 () {44 vars in 930 bytes} [Mon Feb 24 09:25:10 2020] GET /api/personinfo/?search=&userid=1 => generated 4719 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
 [pid: 21364|app: 0|req: 94/150] 159.226.29.55 () {44 vars in 914 bytes} [Mon Feb 24 09:25:15 2020] GET /api/personinfo/?userid=1 => generated 4719 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 0)
 [pid: 21364|app: 0|req: 95/151] 159.226.29.55 () {46 vars in 950 bytes} [Mon Feb 24 10:28:19 2020] DELETE /api/auth/logout/ => generated 2 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 222 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 21364|app: 0|req: 96/152] 27.212.61.150 () {46 vars in 871 bytes} [Mon Feb 24 10:48:33 2020] POST /api/admin/users/ => generated 233 bytes in 11 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+Bad Request: /api/admin/users/
+[pid: 21363|app: 0|req: 36/153] 27.212.61.150 () {46 vars in 871 bytes} [Mon Feb 24 10:48:39 2020] POST /api/admin/users/ => generated 107 bytes in 15 msecs (HTTP/1.1 400) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 21364|app: 0|req: 97/154] 27.212.61.150 () {46 vars in 871 bytes} [Mon Feb 24 10:48:46 2020] POST /api/admin/users/ => generated 22 bytes in 118 msecs (HTTP/1.1 201) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 21362|app: 0|req: 14/155] 27.212.61.150 () {46 vars in 869 bytes} [Mon Feb 24 10:48:58 2020] POST /api/auth/login/ => generated 114 bytes in 310 msecs (HTTP/1.1 201) 7 headers in 463 bytes (1 switches on core 0)
+[pid: 21364|app: 0|req: 98/156] 27.212.61.150 () {44 vars in 948 bytes} [Mon Feb 24 10:48:58 2020] GET /api/personinfo/?userid=23 => generated 2 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 154 bytes (1 switches on core 0)
