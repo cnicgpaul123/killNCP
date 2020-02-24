@@ -9,6 +9,7 @@ from rest_framework import status
 from rest_framework import permissions
 from django.views.generic import View
 from django.http import HttpResponse
+from django.contrib.auth.models import User
 
 from datetime import datetime
 import xlwt
@@ -42,7 +43,7 @@ class PersonInfoIsCreateView(APIView):
                 data["userid"] = personinof_obj.userid
                 return Response(data)
             else:
-                return Response({"flag": 0})
+                return Response({"flag": 0, "phone": phone})
         else:
             return Response({"flag": 2})
 
@@ -58,6 +59,7 @@ class VisitInfoCreateView(APIView):
         userid = request.data.get("userid", None)
 
         personinof_obj = PersonInfo.objects.filter(phone=phone, userid=userid).first()
+
         VisitInfo.objects.create(contactname=contactname, contactphone=contactphone, \
                                 reason=reason, temperature=temperature, person_id=personinof_obj)
         return Response({"msg": "ok"})
@@ -133,6 +135,8 @@ class ExportExcelView(APIView):
     permission_classes = [permissions.IsAdminUser]
 
     def get(self, request):
+        
+        travel_type = {"1":"火车", "2":"自驾", "3":"汽车", "4":"飞机"}
         now = datetime.now()
         time = datetime.strftime(now, '%Y%m%d%H%M%S')
         # 设置excel文件名
@@ -155,13 +159,13 @@ class ExportExcelView(APIView):
         sheet.write(0, 5, '是否来自湖北')
         sheet.write(0, 6, '来源地区')
         sheet.write(0, 7, '春运出行方式')
-        sheet.write(0, 8, '春运日期')
+        sheet.write(0, 8, '抵达本地时间')
         # sheet.write(0, 9, '联系人姓名')
         # sheet.write(0, 10, '联系人电话')
         # sheet.write(0, 11, '到访事由')
         # sheet.write(0, 12, '记录体温')
         sheet.write(0, 9, '添加时间')
-        sheet.write(0, 10, '备注情况')
+        sheet.write(0, 10, '现居住')
         sheet.write(0, 11, '账号')
         data_row = 1
 
@@ -172,10 +176,22 @@ class ExportExcelView(APIView):
             sheet.write(data_row, 1, person.idcard)
             sheet.write(data_row, 2, person.carid)
             sheet.write(data_row, 3, person.phone)
-            sheet.write(data_row, 4, person.is_local)
-            sheet.write(data_row, 5, person.is_fromhubei)
+            if person.is_local == True:
+                    islocal = "是"
+            else:
+                    islocal = "否"
+            sheet.write(data_row, 4, islocal)
+
+            if person.is_fromhubei == True:
+                    isfromhubei = "是"
+            else:
+                    isfromhubei = "否"
+            sheet.write(data_row, 5, isfromhubei)
+
             sheet.write(data_row, 6, person.comefrom)
-            sheet.write(data_row, 7, person.travel_mode)
+            
+            sheet.write(data_row, 7, travel_type[str(person.travel_mode)])
+            
             sheet.write(data_row, 8, str(person.springtime))
             # sheet.write(data_row, 9, person.contactname)
             # sheet.write(data_row, 10, person.contactphone)
@@ -183,7 +199,10 @@ class ExportExcelView(APIView):
             # sheet.write(data_row, 12, person.temperature)
             sheet.write(data_row, 9, str(person.add_time))
             sheet.write(data_row, 10, person.desc)
-            sheet.write(data_row, 11, person.userid)
+
+            obj = User.objects.filter(id=person.userid).first()
+            sheet.write(data_row, 11, obj.username)
+            
             data_row = data_row + 1
 
         # 写出到IO
