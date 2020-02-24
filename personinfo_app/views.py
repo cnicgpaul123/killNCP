@@ -6,6 +6,7 @@ from rest_framework import filters
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework import permissions
 from django.views.generic import View
 from django.http import HttpResponse
 
@@ -76,12 +77,20 @@ class PersonInfoViewSet(viewsets.ModelViewSet):
     """
     queryset = PersonInfo.objects.all()
     serializer_class = PersonInfoSerializer
-    pagination_class = PersonInfoPagination
+    # pagination_class = PersonInfoPagination
+    # permission_classes = [permissions.IsAdminUser]
     # authentication_classes = (TokenAuthentication, )
     filter_backends = (filters.SearchFilter, ) # filters.DjangoFilterBackend, filters.OrderingFilter,
     # filter_class = PersonInfoFilter
     search_fields = ('name', 'phone')   
     # ordering_fields = ('add_time', )
+
+    def get_permissions(self):
+        if self.action == "retrieve" or self.action == "list":
+            return [permissions.IsAdminUser()]
+        elif self.action == "create":
+            return []
+        return []
 
     def create(self, request, *args, **kwargs):
         phone = request.data.get("phone", None)
@@ -117,10 +126,12 @@ class PersonInfoViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
-class ExportExcelView(View):
+class ExportExcelView(APIView):
     """
     导出人员信息excel表
     """
+    permission_classes = [permissions.IsAdminUser]
+
     def get(self, request):
         now = datetime.now()
         time = datetime.strftime(now, '%Y%m%d%H%M%S')

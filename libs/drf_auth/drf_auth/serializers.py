@@ -165,6 +165,10 @@ class CreateUserSerializer(PasswordResetSerializer):
 
     username = serializers.CharField()
 
+    default_error_messages = {
+        'password_entirely_numeric': "密码不能为纯数字"
+    }
+
     def validate_username(self, value):
         """ 检查帐号是否存在 """
         try:

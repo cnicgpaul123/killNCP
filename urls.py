@@ -30,7 +30,9 @@ urlpatterns = [
     path('api/', include('drf_auth.api.urls')),
     # path('api/admin/', include('drf_auth.admin.urls')),
     # path('api/', include('drf_auth.api.urls')),
-
+    
+    # personinfo api 
+    path(r'', include(router.urls)),
     path('api/exportexcel/', views.ExportExcelView.as_view(), name='export_person'),
     path('api/personinfoiscreate/', views.PersonInfoIsCreateView.as_view(), name='personinfo_is_create'),
     path('api/visitinfo/', views.VisitInfoCreateView.as_view(), name='visitinfo'),
