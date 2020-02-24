@@ -20,6 +20,11 @@ class PersonInfoSerializer(serializers.ModelSerializer):
     reason = serializers.CharField(write_only=True, help_text="到访事由")
     temperature = serializers.CharField(write_only=True, help_text="记录体温")
 
+    carid = serializers.CharField(allow_blank=True, allow_null=True, help_text="车牌号")
+    desc = serializers.CharField(allow_blank=True, allow_null=True, help_text="现居住")
+    travel_mode = serializers.CharField(allow_blank=True, allow_null=True, help_text="春运出行方式")
+    # springtime = serializers.DateTimeField(allow_blank=True, allow_null=True, help_text="春运日期")
+
     def validate(self, attrs):
         del attrs["contactname"]
         del attrs["contactphone"]
