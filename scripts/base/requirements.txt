@@ -6,7 +6,7 @@
 # Django==2.2.*
 django-cors-headers==2.5.2
 django-filter==2.1.0
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 # kombu==4.1.0
 # pycrypto==2.6.1
 # pymongo==3.6.1
