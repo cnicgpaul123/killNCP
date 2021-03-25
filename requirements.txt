@@ -27,7 +27,7 @@ PyMySQL==0.9.3
 -e git+https://github.com/princeofdatamining/project-sample.git@2245e10e93bb4ffc934f53546278e0d0ff496c36#egg=python_general_qrcode&subdirectory=libs/general_qrcode
 -e git+https://github.com/princeofdatamining/project-sample.git@2245e10e93bb4ffc934f53546278e0d0ff496c36#egg=python_libtest&subdirectory=libs/libtest
 pytz==2018.9
-PyYAML==5.1
+PyYAML==5.4
 raven==6.10.0
 requests==2.21.0
 six==1.12.0
